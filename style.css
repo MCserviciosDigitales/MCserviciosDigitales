@@ -269,9 +269,9 @@ input:checked + .slider:before {
 /*esto es para mensaje persuasivo*/
 .cta-servicios {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   padding: 2rem 1rem;
-  border-top: 1px solid #f5f5dc;
+  padding-bottom: 4rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -384,4 +384,32 @@ footer a:hover {
 
 .card-back ul li {
   margin-bottom: 0.5rem;
+}
+
+.precio-promocional {
+  font-size: 3rem !important;
+  color: #FFD700; /* Amarillo brillante */
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.promo-fecha {
+  color: #FFD700 !important;
+  font-weight: bold;
+  margin-top: 4px;
+  display: block;
+}
+
+/* tamaño y color textos del reverso del card */
+.detalle-servicio p,
+.detalle-servicio ul {
+  font-size: 0.8rem;
+  color: #fcfafa; /* o el color que estés usando */
+  line-height: 1.4;
+}
+
+.detalle-servicio h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
 }
