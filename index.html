@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MC Servicios Digitales</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-imagen">
+      <img src="img/bannerMC.png" alt="Mariana trabajando" />
+    </div>
+  </section>
+
+  <!-- BOTON SWITCH -->
+  <section id="switch-mode">
+  <label class="switch">
+    <input type="checkbox" id="toggleView" checked>
+    <span class="slider"></span>
+  </label>
+  <span id="modoTexto">Sobre mí</span>
+</section>
+
+  
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi">
+  <div class="sobremi-contenido">
+    <!-- TEXTO -->
+    <div class="texto-sobremi">
+      <h2>Sobre mí</h2>
+      <p>Soy Mariana, Desarrolladora Web y Aplicaciones Digitales, con formación en Gestión Pública y una fuerte vocación por acompañar a emprendedores a crecer y potenciar sus proyectos.</p>
+
+      <p>Gracias a mi formación en gestión y emprendedurismo, cuento con herramientas estratégicas para entender cada negocio de forma integral. Sé trabajar sobre modelos de negocio, definir públicos objetivos, mapear necesidades reales y aportar claridad.</p>
+
+      <p>Combino mis habilidades como programadora FullStack y diseñadora digital para crear soluciones únicas, funcionales y con identidad propia.</p>
+
+      <p>Me caracteriza una mirada estratégica, con pensamiento lógico y analítico, que me permite ordenar ideas, detectar oportunidades y acompañar decisiones clave.</p>
+
+      <p>Mi compromiso es ofrecerte un proceso cercano, sin plantillas genéricas, donde tu marca refleje quién sos y se destaque en el mundo digital.</p>
+    </div>
+
+    <!-- ICONOS -->
+    <div class="iconos-sobremi-vertical">
+  <div class="icono-item">
+    <img src="img/fullstack.svg" alt="FullStack" />
+    <span>Desarrollo FullStack</span>
+  </div>
+  <div class="icono-item">
+    <img src="img/diseño.svg" alt="Diseño digital" />
+    <span>Diseño digital</span>
+  </div>
+  <div class="icono-item">
+    <img src="img/caballo.svg" alt="Pensamiento estratégico" />
+    <span>Pensamiento estratégico</span>
+  </div>
+  <div class="icono-item">
+    <img src="img/startup.svg" alt="Emprendedurismo" />
+    <span>Impulso emprendedor</span>
+  </div>
+  <div class="icono-item">
+    <img src="img/pensamiento.svg" alt="Lógica analítica" />
+    <span>Enfoque lógico y analítico</span>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="cards-servicios">
+      
+      <div class="card">
+      <div class="card-banner-container">
+        <img class="card-banner" src="img/landing.png" alt="Landing page" />
+       </div>
+      <h3>Landing page</h3>
+      <p>Web funcional, moderna y conectada a WhatsApp.</p>
+      <span>$10.000</span>
+    </div>
+
+
+      <div class="card">
+        <div class="card-banner-container">
+        <img class="card-banner" src="img/calendario.png" alt="Turnos online" />
+        </div>
+        <h3>Sistema de turnos</h3>
+        <p>Formulario con reserva en Google Sheets.</p>
+        <span>$10.000</span>
+      </div>
+
+      <div class="card">
+         <div class="card-banner-container">
+        <img class="card-banner" src="img/flyer.png" alt="Flyers" />
+        </div>
+        <h3>Flyers digitales</h3>
+        <p>Diseños únicos para comunicar tu negocio.</p>
+        <span>$5.000</span>
+      </div>
+
+      <div class="card">
+        <div class="card-banner-container">
+        <img class="card-banner" src="img/actualizar.png" alt="Actualización" />
+        </div>
+        <h3>Actualización de landings</h3>
+        <p>Cambios puntuales o mantenimiento mensual.</p>
+        <span>Desde $3.000</span>
+      </div>
+
+      <div class="card">
+        <div class="card-banner-container">
+        <img class="card-banner" src="img/actualiza1.png" alt="Logo" />
+        </div>
+        <h3>Diseño de logo</h3>
+        <p>Identidad visual desde cero para tu emprendimiento.</p>
+        <span>$9.000</span>
+      </div>
+
+    </div>
+
+    <!-- LLAMADO FINAL DENTRO DE "SERVICIOS" -->
+<div class="cta-servicios">
+  <h3>¿Querés sumar tu emprendimiento al mundo digital?</h3>
+  <p>Estoy lista para ayudarte a crear algo único, con estrategia y diseño a tu medida.</p>
+  <a href="https://wa.me/543515911147?text=Hola%20Mariana%2C%20quiero%20saber%20más%20sobre%20los%20servicios%20digitales%20que%20ofreces" class="boton grande">
+  Hablemos por WhatsApp</a>
+  
+</div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>MC Servicios Digitales – Córdoba, Argentina</p>
+    <p>Sígueme en <a href="https://instagram.com/mc.serviciosdigitales">@mc.serviciosdigitales</a></p>
+    <p>© 2025 – Todos los derechos reservados</p>
+  </footer>
+
+<script>
+  const toggle = document.getElementById("toggleView");
+  const sobreMi = document.getElementById("sobre-mi");
+  const servicios = document.getElementById("servicios");
+  const textoModo = document.getElementById("modoTexto");
+
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      sobreMi.style.display = "block";
+      servicios.style.display = "none";
+      textoModo.textContent = "💁 Sobre mí";
+    } else {
+      sobreMi.style.display = "none";
+      servicios.style.display = "block";
+      textoModo.textContent = "🛠 Servicios";
+    }
+  });
+
+  // Mostrar sólo "Sobre mí" al inicio
+  servicios.style.display = "none";
+</script>
+</body>
+</html>
