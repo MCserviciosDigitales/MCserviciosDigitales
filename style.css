@@ -1,0 +1,387 @@
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  color: #fff;
+}
+
+/*imagen */
+.hero-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* SWITCH */
+#switch-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+/* INTERRUPTOR MÁS ANCHO Y ALTO */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;   /* más ancho */
+  height: 44px;  /* más alto */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* FONDO BEIGE CON BRILLO */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(145deg, #d8b98c, #bfa16e); /* beige con brillo */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 34px;       /* más grande */
+  width: 34px;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* CAMBIO DE COLOR AL ACTIVARSE */
+input:checked + .slider {
+  background: linear-gradient(145deg, #d2b48c, #c9a46b); /* beige miel clara con brillo */
+  box-shadow: 0 0 10px #d2b48c;
+}
+
+input:checked + .slider:before {
+  transform: translateX(46px);  /* acorde al nuevo ancho */
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#modoTexto {
+  color: #f5deb3; /* tono beige claro */
+  font-weight: 600;
+}
+
+
+
+#sobre-mi {
+  background-color: #1a1a1a;
+  padding: 3rem 2rem;
+  border-top: 2px solid #d2b48c;
+  border-bottom: 2px solid #d2b48c;
+  color: #eee;
+}
+
+.sobremi-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-sobremi {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.texto-sobremi h2 {
+  font-size: 2rem;
+  color: #d2b48c;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.texto-sobremi p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.iconos-sobremi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.2rem;
+  flex: 1 1 300px;
+  min-width: 260px;
+}
+
+.icono-item {
+  text-align: center;
+}
+
+.icono-item img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+  filter: brightness(1.2);
+}
+
+.icono-item span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #f5deb3;
+}
+.iconos-sobremi-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.iconos-sobremi-vertical .icono-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.iconos-sobremi-vertical .icono-item img {
+  width: 48px;
+  height: 48px;
+  filter: brightness(1.2);
+}
+
+.iconos-sobremi-vertical .icono-item span {
+  font-weight: 600;
+  color: #f5deb3;
+  font-size: 1rem;
+}
+
+
+/* CONTENEDOR DE LAS CARDS */
+.cards-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* ESTILO BASE DE LAS CARDS */
+.card {
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a); /* fondo más oscuro */
+  border: 1px solid rgba(255, 245, 220, 0.2); /* borde beige claro sutil */
+  border-radius: 20px;
+   padding: 0 1.5rem 2rem 1.5rem; /* sin padding arriba */
+  text-align: center;
+  color: #f5f5dc;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 1px rgba(255, 245, 220, 0.1); /* borde luminoso */
+}
+
+/* EFECTO HOVER */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
+  box-shadow: 0 0 20px rgba(230, 207, 167, 0.5); /* brillo dorado suave */
+  border: 1px solid rgba(255, 215, 0, 0.5);     /* borde dorado más visible */
+}
+
+
+
+
+/* IMAGEN DENTRO DE LA CARD */
+/* SOLO PARA ICONOS PEQUEÑOS */
+.card img:not(.card-banner) {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+  filter: brightness(1.2);
+}
+
+
+/* TITULOS Y TEXTOS */
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #fff6dc;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.card span {
+  font-size: 1.1rem;
+  color: #ffe6b3;
+  font-weight: bold;
+}
+
+.card-banner-container {
+  width: calc(100% + 3rem); /* Expande el ancho para cubrir padding izquierdo y derecho */
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  height: 160px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+
+
+.card-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto hace que se vea como banner completo sin deformarse */
+  display: block;
+}
+
+
+
+#servicios {
+  background-color: #111; /* o el mismo que tengas de fondo general */
+  padding: 3rem 2rem;
+  border-top: 2px solid #f5f5dc;     /* línea beige arriba */
+  border-bottom: 2px solid #f5f5dc;  /* línea beige abajo */
+}
+
+/*esto es para mensaje persuasivo*/
+.cta-servicios {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid #f5f5dc;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-servicios h3 {
+  color: #f5deb3;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-servicios p {
+  color: #ddd;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta-servicios .boton.grande {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  background-color: #25D366; /* VERDE WHATSAPP */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.cta-servicios .boton.grande:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/*footer*/
+footer {
+  background-color: #1a1a1a; /* fondo oscuro elegante */
+  color: #eee;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  border-top: 2px solid #d2b48c; /* línea superior beige suave */
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #f5deb3; /* beige claro */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff8dc; /* un tono más claro al pasar el mouse */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/*GIRO DE CARD*/
+.card-flip {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-inner,
+.card-flip:focus-within .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Frente y dorso */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  border: 1px solid rgba(255, 245, 220, 0.2);
+  box-shadow: 0 0 0 1px rgba(255, 245, 220, 0.1);
+  color: #f5f5dc;
+  text-align: center;
+}
+
+/* Reverso */
+.card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #2e2e2e, #3a3a3a);
+}
+
+.card-back h3 {
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.card-back ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-back ul li {
+  margin-bottom: 0.5rem;
+}
