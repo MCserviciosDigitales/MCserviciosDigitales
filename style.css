@@ -407,6 +407,7 @@ footer a:hover {
   font-size: 0.8rem;
   color: #fcfafa; /* o el color que estés usando */
   line-height: 1.4;
+  text-align: left;
 }
 
 .detalle-servicio h4 {
