@@ -1,2 +1,64 @@
-# MCserviciosDigitales
-Sitio oficial de MC Servicios Digitales. Diseño web personalizado, soluciones accesibles para emprendedores y marcas en crecimiento. 
+# 💻 Landing personal – MC Servicios Digitales
+
+Este repositorio contiene la landing oficial de *MC Servicios Digitales*, emprendimiento enfocado en brindar soluciones digitales accesibles y funcionales para emprendedores y marcas emergentes.
+
+---
+
+## ✨ ¿Qué incluye este sitio?
+
+- Presentación clara del modelo de negocio
+- Servicios ofrecidos con descripción breve
+- Contacto directo por WhatsApp
+- Diseño responsive y profesional
+- Estética visual coherente con la identidad del emprendimiento
+
+---
+
+## 🎯 Propósito
+
+Esta landing es la carta de presentación personal de la fundadora: Desarrolladora, Diseñadora y Emprendedora digital. Un espacio donde convergen diseño, programación y estrategia de negocios.
+
+> “Diseño y tecnología accesible para emprendedores que quieren crecer.”
+
+---
+
+## 👩‍💻 Sobre mí
+
+Soy Mariana, Desarrolladora Web y Aplicaciones Digitales, con formación en Gestión Pública y una fuerte vocación por acompañar a emprendedores en el crecimiento de sus proyectos.
+
+Mi enfoque une lo técnico y lo humano: combino habilidades de programación FullStack y diseño digital con herramientas estratégicas para entender cada negocio de forma integral. Me especializo en trabajar sobre modelos de negocio reales, mapear necesidades concretas y traducirlas en soluciones funcionales, personalizadas y con identidad propia.
+
+Me caracteriza una mirada estratégica, lógica y analítica, ideal para ordenar ideas, detectar oportunidades y acompañar decisiones clave.
+
+> Mi compromiso es ofrecer procesos cercanos, sin plantillas genéricas, donde cada marca refleje quién es y se destaque con autenticidad en el mundo digital.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML5 + CSS3 + JavaScript
+- Deploy con Netlify
+- Formularios conectados con Google Sheets
+
+---
+
+## 📦 Organización
+
+Este proyecto forma parte de la organización **MC Servicios Digitales** en GitHub, que nuclea landings y soluciones creadas para clientes.
+
+---
+
+## 🔒 Licencia
+
+Este repositorio está bajo los términos de la [licencia MIT](LICENSE).
+
+---
+
+## 📬 Contacto
+
+Si te interesa crear tu propia landing, flyers o sistema digital personalizado, escribime:
+
+- 📱 WhatsApp: *[proximamnete]*
+- 📷 Instagram: [@mcserviciosdigitales](https://www.instagram.com/mcserviciosdigitales)
+
+Gracias por visitar este proyecto 💛
