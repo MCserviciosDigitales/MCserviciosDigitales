@@ -16,6 +16,19 @@ h1, h2, h3 {
   object-fit: cover;
 }
 
+.titulo-hero {
+  font-size: 4rem; /* Tamaño grande para PC */
+  text-align: center;
+  color: #ffffff; /* Cambiá el color si lo necesitás */
+  margin-top: 20px;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .titulo-hero {
+    font-size: 2rem; /* Más chico pero aún visible en celular */
+  }
+}
 
 /* SWITCH */
 #switch-mode {
