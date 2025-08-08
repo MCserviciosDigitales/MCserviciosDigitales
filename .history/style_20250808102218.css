@@ -447,62 +447,31 @@ footer a:hover {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-/* 🔁 Contenedor general: precio + botón */
-.precio-boton {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-
-/* 🔁 Contenedor interno del precio */
 .precio-container {
-  margin-top: 1rem;
-}
-
-.precio-linea {
+  margin: 1rem 0;
   display: flex;
-  gap: 0.5rem;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
+/* Precio original tachado */
 .precio-original {
   text-decoration: line-through;
   color: #bbb;
   font-size: 1.1rem;
+  margin-right: 10px;
+  display: inline-block; /* ✅ Mejor que block para que se alinee con el precio promo */
 }
 
+/* Precio promocional destacado */
 .precio-promocional {
   font-size: 1.3rem;
   font-weight: bold;
   color: #e91e63;
 }
 
-.promo-fecha-logo {
+/* Fecha de la promo */
+.promo-fecha {
   font-size: 0.9rem;
-  color: #FFD700 !important;
-  margin-top: 0.3rem;
-  display: block;
-}
-
-.precio-final-destacado {
-  display: block;
-  text-align: center;
-  font-size:  3em !important;    /* Más grande */
-  font-weight: bold;      /* Más grueso */
-  margin: 20px 0;         /* Espaciado arriba y abajo */
-  color: #FFD700!important;           /* Color neutro, podés cambiarlo */
-}
-.precio-final {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.precio-promocional-logo{
-  font-size: 3em !important;
-   font-weight: bold; 
-   margin: 4px 0;
-   text-align: center !important;        /* Centrado horizontal */
-  display: block;            /* Asegura que el texto ocupe toda la línea */
-  
+  color: #ff9800;
 }
