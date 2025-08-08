@@ -478,9 +478,9 @@ footer a:hover {
   color: #e91e63;
 }
 
-.promo-fecha-logo {
+.promo-fecha {
   font-size: 0.9rem;
-  color: #FFD700 !important;
+  color: #ff9800;
   margin-top: 0.3rem;
   display: block;
 }
@@ -491,7 +491,7 @@ footer a:hover {
   font-size:  3em !important;    /* Más grande */
   font-weight: bold;      /* Más grueso */
   margin: 20px 0;         /* Espaciado arriba y abajo */
-  color: #FFD700!important;           /* Color neutro, podés cambiarlo */
+  color: #ff9800!important;           /* Color neutro, podés cambiarlo */
 }
 .precio-final {
   text-align: center;
@@ -502,7 +502,4 @@ footer a:hover {
   font-size: 3em !important;
    font-weight: bold; 
    margin: 4px 0;
-   text-align: center !important;        /* Centrado horizontal */
-  display: block;            /* Asegura que el texto ocupe toda la línea */
-  
 }
