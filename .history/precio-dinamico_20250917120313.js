@@ -1,47 +1,54 @@
-// 🕒 FECHA LÍMITE DE LA PROMO
+// 🕒 FECHA LÍMITE DE LA PROMO - LANDING
 const fechaLimitePromo = new Date("2025-08-25");
 const hoy = new Date();
 
-// 💰 Precios en USD - LANDING
-const precioNormal = "150 USD";
-const precioConDescuento = "150 USD";
-const textoPromo = "Válida hasta el 25/08/2025";
+// 💰 Precios - LANDING
+const precioNormal = "USD150";
+const precioConDescuento = "$15.000";
+const textoPromo = "Valida hasta el 25/08";
 
-// ✅ LÓGICA DE PRECIOS PROMOCIONALES
+// 🔁 Actualizar precios promocionales - LANDING
 document.querySelectorAll(".precio-promocional").forEach(el => {
   el.textContent = hoy > fechaLimitePromo ? precioNormal : precioConDescuento;
 });
 
-// ✅ LÓGICA PARA ACTUALIZAR PRECIO INICIAL
+// 🔁 Actualizar precio en cara inicial - LANDING
 document.querySelectorAll(".precio-inicial").forEach(el => {
   el.textContent = hoy > fechaLimitePromo ? precioNormal : precioConDescuento;
 });
 
-// ✅ LÓGICA PARA MOSTRAR/OCULTAR PRECIO ORIGINAL TACHADO
+// ✅ Mostrar el precio original tachado solo cuando hay promo - LANDING
 document.querySelectorAll(".precio-original").forEach(el => {
   el.textContent = precioNormal;
+  el.style.display = "inline";
   el.style.textDecoration = hoy > fechaLimitePromo ? "none" : "line-through";
-  el.style.display = hoy > fechaLimitePromo ? "none" : "inline";
 });
 
-// ✅ LÓGICA PARA MOSTRAR/OCULTAR LA FECHA DE VALIDEZ
+// 🗓️ Fecha de validez - LANDING
 document.querySelectorAll(".promo-fecha").forEach(el => {
-  el.textContent = textoPromo;
-  el.style.display = hoy > fechaLimitePromo ? "none" : "inline";
+  if (hoy > fechaLimitePromo) {
+    el.style.display = "none";
+  } else {
+    el.textContent = textoPromo;
+    el.style.display = "inline";
+  }
 });
 
-// ✅ LÓGICA PARA MOSTRAR/OCULTAR LÍNEAS DE PRECIOS
+// ❌ Ocultar línea de promo si venció - LANDING
 document.querySelectorAll(".promo-linea").forEach(el => {
   el.style.display = hoy > fechaLimitePromo ? "none" : "block";
 });
 
+// ✅ Mostrar línea de precio final si venció - LANDING
 document.querySelectorAll(".precio-final").forEach(el => {
   el.style.display = hoy > fechaLimitePromo ? "block" : "none";
 });
 
+// 🔁 Actualizar contenido del precio final - LANDING
 document.querySelectorAll(".precio-final-destacado").forEach(el => {
   el.textContent = precioNormal;
 });
+
 
 // 🕒 FECHA LÍMITE DE LA PROMO - FLYER
 const fechaLimiteFlyer = new Date("2025-08-25");
@@ -98,7 +105,7 @@ document.querySelectorAll(".precio-final-destacado-flyer").forEach(el => {
 const fechaLimiteActualizacion = new Date("2025-08-25");
 
 // 💰 Precios - ACTUALIZACIÓN LANDING
-const precioNormalActualizacion = "25 USD";           // Precio sin promo
+const precioNormalActualizacion = "$6.000";           // Precio sin promo
 const precioConDescuentoActualizacion = "$5.000";     // Precio con promo
 
 const precioNormalAjuste = "$4.000";                  // Precio sin promo (ajuste menor)

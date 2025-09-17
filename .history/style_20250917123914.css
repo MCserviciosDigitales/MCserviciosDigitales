@@ -407,9 +407,9 @@ footer a:hover {
   margin-top: 10px;
   display: block;
 }
-.precio-final-1{
+.precio-pack-flyer{
   font-size: 3rem !important;
-  color: #FFD700 !important; /* Amarillo brillante */
+  color: #FFD700; /* Amarillo brillante */
   font-weight: bold;
   margin-top: 10px;
   display: block;
