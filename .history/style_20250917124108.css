@@ -409,7 +409,7 @@ footer a:hover {
 }
 .precio-final-1{
   font-size: 3rem !important;
-  color: #FFD700 !important; /* Amarillo brillante */
+  color: #FFD700; /* Amarillo brillante */
   font-weight: bold;
   margin-top: 10px;
   display: block;

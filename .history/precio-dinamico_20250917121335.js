@@ -3,7 +3,7 @@ const fechaLimitePromo = new Date("2025-08-25");
 const hoy = new Date();
 
 // 💰 Precios en USD - LANDING
-const precioNormal = "150 USD";
+const precioNormal = "180 USD";
 const precioConDescuento = "150 USD";
 const textoPromo = "Válida hasta el 25/08/2025";
 
@@ -98,7 +98,7 @@ document.querySelectorAll(".precio-final-destacado-flyer").forEach(el => {
 const fechaLimiteActualizacion = new Date("2025-08-25");
 
 // 💰 Precios - ACTUALIZACIÓN LANDING
-const precioNormalActualizacion = "25 USD";           // Precio sin promo
+const precioNormalActualizacion = "$6.000";           // Precio sin promo
 const precioConDescuentoActualizacion = "$5.000";     // Precio con promo
 
 const precioNormalAjuste = "$4.000";                  // Precio sin promo (ajuste menor)
