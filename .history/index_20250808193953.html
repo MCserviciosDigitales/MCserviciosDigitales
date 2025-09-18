@@ -293,7 +293,8 @@
     if (toggle.checked) {
       sobreMi.style.display = "block";
       servicios.style.display = "none";
-      textoModo.textContent = "💁 Sobre mí";
+      textoModo.innerHTML = '<i class="bi bi-person-circle"></i> Sobre mí';
+
     } else {
       sobreMi.style.display = "none";
       servicios.style.display = "block";

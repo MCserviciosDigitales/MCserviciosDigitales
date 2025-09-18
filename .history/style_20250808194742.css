@@ -274,7 +274,7 @@ input:checked + .slider:before {
 
 #servicios {
   background-color: #111; /* o el mismo que tengas de fondo general */
-  padding: 0 rem 2rem 3rem 2rem; /* top right bottom left */
+  padding: 0.5rem 2rem 3rem 2rem; /* top right bottom left */
 
  /*  border-top: 2px solid #f5f5dc;     línea beige arriba */
   border-bottom: 2px solid #f5f5dc;  /* línea beige abajo */

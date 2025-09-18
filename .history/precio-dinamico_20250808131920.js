@@ -180,9 +180,3 @@ document.querySelectorAll(".promo-fecha-logo").forEach(el => {
 document.querySelectorAll(".promo-linea-logo").forEach(el => {
   el.style.display = hoy > fechaLimiteLogo ? "none" : "block";
 });
-// ✅ Mostrar precio original tachado si hay promo - LOGO
-document.querySelectorAll(".precio-original-logo").forEach(el => {
-  el.textContent = precioNormalLogo; // "$15.000"
-  el.style.display = hoy > fechaLimiteLogo ? "none" : "inline";
-  el.style.textDecoration = hoy > fechaLimiteLogo ? "none" : "line-through";
-});
