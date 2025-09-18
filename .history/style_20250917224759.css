@@ -570,9 +570,3 @@ footer a:hover {
   font-size: 0.9rem;
   color: #f5deb3;
 }
-
-.pregunta-destacada {
-  color: #FFD700 !important; /* amarillo brillante */
-  font-weight: bold;
-  margin-top: 1rem;
-}
