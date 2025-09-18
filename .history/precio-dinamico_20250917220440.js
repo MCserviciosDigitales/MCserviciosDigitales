@@ -3,7 +3,7 @@ const fechaLimitePromo = new Date("2025-08-25");
 const hoy = new Date();
 
 // 💰 Precios - LANDING
-const precioNormal = "$150.000 ARS";
+const precioNormal = "$20.000";
 const precioConDescuento = "$15.000";
 const textoPromo = "Valida hasta el 25/08";
 

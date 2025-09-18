@@ -3,7 +3,7 @@ const fechaLimitePromo = new Date("2025-08-25");
 const hoy = new Date();
 
 // 💰 Precios - LANDING
-const precioNormal = "$150.000 ARS";
+const precioNormal = "$20.000";
 const precioConDescuento = "$15.000";
 const textoPromo = "Valida hasta el 25/08";
 
@@ -54,7 +54,7 @@ document.querySelectorAll(".precio-final-destacado").forEach(el => {
 const fechaLimiteFlyer = new Date("2025-08-25");
 
 // 💰 Precios - FLYER
-const precioNormalFlyer = "$15.000 ARS";
+const precioNormalFlyer = "$7.000";
 const precioConDescuentoFlyer = "$5.000";
 const textoPromoFlyer = "Valida hasta el 25/08";
 
