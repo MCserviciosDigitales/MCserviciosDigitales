@@ -572,7 +572,7 @@ footer a:hover {
 }
 
 .pregunta-destacada {
-  color: #FFD700 !important; /* amarillo brillante */
+  color: #FFD700; /* amarillo brillante */
   font-weight: bold;
   margin-top: 1rem;
 }

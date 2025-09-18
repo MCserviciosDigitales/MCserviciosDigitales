@@ -508,71 +508,12 @@ footer a:hover {
   
 }
 
-/* === CORRECCIONES PARA UNIFICAR ESTILO DE CARDS === */
-
-/* Precio inicial en cara principal */
-.precio-inicial {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #FFD700;
-  display: block;
-  margin: 1rem 0;
-}
-
-/* Precio promocional grande y amarillo */
-.precio-promocional {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #FFD700 !important;
-  display: block;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-/* Precio original tachado */
-.precio-original {
-  text-decoration: line-through;
-  color: #bbb;
-  font-size: 1.1rem;
-  margin-right: 0.5rem;
-}
-
-/* Precio final si no hay promo */
-.precio-final {
-  text-align: center;
-  margin: 30px 0;
-}
-
+.precio-promocional,
 .precio-final-destacado {
   font-size: 3rem;
   font-weight: bold;
   color: #FFD700;
   display: block;
-  margin: 1rem 0;
-}
-
-/* Fecha de promo */
-.promo-fecha {
-  color: #FFD700;
-  font-weight: bold;
-  font-size: 0.9rem;
-  display: block;
-  text-align: center;
-  margin-top: 0.3rem;
-}
-
-/* Línea de promo y packs */
-.promo-linea,
-.pack-linea,
-.promo-linea-ajuste {
   text-align: center;
   margin: 1rem 0;
-  font-size: 0.9rem;
-  color: #f5deb3;
-}
-
-.pregunta-destacada {
-  color: #FFD700 !important; /* amarillo brillante */
-  font-weight: bold;
-  margin-top: 1rem;
 }
