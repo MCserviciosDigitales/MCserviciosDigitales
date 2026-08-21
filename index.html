@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MC Servicios Digitales | Diseño web y soluciones para emprendedores en Córdoba</title>
+  <meta name="description" content="Servicios digitales para emprendedores: diseño web, landing pages, flyers y logos personalizados. Potenciá tu proyecto con MC Servicios Digitales.">
+  <meta name="keywords" content="servicios digitales, páginas web, diseño web, landing page, emprendedores, Córdoba, MC Servicios Digitales, flyers, logos, WhatsApp">
+  <meta name="author" content="Mariana C.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="MC Servicios Digitales | Soluciones digitales para emprendedores">
+  <meta property="og:description" content="Diseño web, landing pages y más para potenciar tu emprendimiento. Conectá tu marca al mundo digital.">
+  <meta property="og:image" content="https://mcserviciosdigitales.netlify.app/img/bannerMC1.png">
+  <meta property="og:url" content="https://mcserviciosdigitales.netlify.app/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section id="hero">
+    <div class="hero-imagen">
+      <img src="img/bannerFINAL.png" alt="Servicios digitales: Estrategia, diseño, resultados" />
+    </div>
+    <div class="hero-texto">
+      <h1>Soluciones digitales a la medida de tu proyecto</h1>
+      <p>Transformá tus ideas en resultados. Desarrollamos sitios web y experiencias digitales para emprendimientos, artistas, eventos especiales y marcas personales.</p>
+    </div>
+  </section>
+
+  <section id="switch-mode" style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 30px 0;">
+    
+    <div id="cartelito-switch" style="
+      position: absolute; 
+      top: -55px; /* Lo ubica justo arriba del switch */
+      left: 50%; 
+      transform: translateX(-50%); 
+      background-color: #FFD700; 
+      color: #000; 
+      padding: 8px 15px; 
+      border-radius: 20px; 
+      font-weight: bold; 
+      font-size: 0.85rem; 
+      white-space: nowrap;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      animation: palpitar 1.5s infinite alternate;
+      z-index: 10;
+    ">
+      👉 Deslizá para ver mis servicios
+
+      <div style="
+        position: absolute; 
+        bottom: -6px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        border-width: 6px 6px 0; 
+        border-style: solid; 
+        border-color: #FFD700 transparent; 
+        display: block; 
+        width: 0;
+      "></div>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <label class="switch" style="margin-bottom: 0;">
+        <input type="checkbox" id="toggleView">
+        <span class="slider"></span>
+      </label>
+      <span id="modoTexto" style="color: #fff; font-weight: bold; cursor: pointer;">💁 Sobre mí</span>
+    </div>
+
+  </section>
+
+  <section id="sobre-mi">
+    <div class="sobremi-contenido">
+      <div class="texto-sobremi">
+        <h2>Sobre mí</h2>
+        <p>Desarrolladora Web y Aplicaciones Digitales, con formación en Gestión Pública y una fuerte vocación por acompañar a emprendedores a crecer y potenciar sus proyectos.</p>
+        <p>Gracias a mi formación en gestión y emprendedurismo, cuento con herramientas estratégicas para entender cada negocio de forma integral. Sé trabajar sobre modelos de negocio, definir públicos objetivos, mapear necesidades reales y aportar claridad.</p>
+        <p>Combino mis habilidades como programadora FullStack y diseñadora digital para crear soluciones únicas, funcionales y con identidad propia.</p>
+        <p>Me caracteriza una mirada estratégica, con pensamiento lógico y analítico, que me permite ordenar ideas, detectar oportunidades y acompañar decisiones clave.</p>
+        <p>Mi compromiso es ofrecerte un proceso cercano, sin plantillas genéricas, donde tu marca refleje quién sos y se destaque en el mundo digital.</p>
+      </div>
+
+      <div class="iconos-sobremi-vertical">
+        <div class="icono-item">
+          <img src="img/fullstack.svg" alt="FullStack" />
+          <span>Desarrollo FullStack</span>
+        </div>
+        <div class="icono-item">
+          <img src="img/diseño.svg" alt="Diseño digital" />
+          <span>Diseño digital</span>
+        </div>
+        <div class="icono-item">
+          <img src="img/caballo.svg" alt="Pensamiento estratégico" />
+          <span>Pensamiento estratégico</span>
+        </div>
+        <div class="icono-item">
+          <img src="img/startup.svg" alt="Emprendedurismo" />
+          <span>Impulso emprendedor</span>
+        </div>
+        <div class="icono-item">
+          <img src="img/pensamiento.svg" alt="Lógica analítica" />
+          <span>Enfoque lógico y analítico</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="cards-servicios">
+
+      <div class="card">
+        <div class="contenido-principal">
+          <div class="card-banner-container">
+            <img class="card-banner" src="img/landing.png" alt="Landing page" />
+          </div>
+          <h3>Página WEB</h3>
+          <p>Web funcional, moderna y conectada a WhatsApp.</p>
+          <button class="ver-detalle">Ver detalles</button>
+        </div>
+
+        <div class="detalle-servicio" style="display: none;">
+          <h4>Incluye:</h4>
+          <ul>
+            <li>Diseño responsive</li>
+            <li>Conexión directa a WhatsApp</li>
+            <li>1 ronda de ajustes</li>
+          </ul>
+          <p><strong>Duración:</strong> 3–5 días hábiles</p>
+          <p><strong>Entrega:</strong> Link Web funcional</p>
+          <p><strong><u>Condiciones:</u></strong> Seña del 50% | Pago completo</p>
+          <a href="https://wa.me/543515911147?text=Hola%20Mariana%2C%20me%20interesa%20el%20servicio%20de%20Página%20Web" target="_blank" class="boton" style="display: block;color: #25D366; margin: 15px 0; text-align: center; text-decoration: none;">Consultar por WhatsApp</a>
+          <button class="volver">Volver</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contenido-principal">
+          <div class="card-banner-container">
+            <img class="card-banner" src="img/flyer.svg" alt="Flyer promocional" />
+          </div>
+          <h3>Flyer promocional</h3>
+          <p>Diseño original para redes y campañas digitales.</p>
+          <button class="ver-detalle">Ver detalles</button>
+        </div>
+
+        <div class="detalle-servicio" style="display: none;">
+          <h4>Incluye:</h4>
+          <ul>
+            <li>Diseño desde cero</li>
+            <li>Entrevista breve</li>
+            <li>2 rondas de ajustes</li>
+            <li>Entrega en PNG/JPG</li>
+          </ul>
+          <p><strong><u>Condiciones:</u></strong> Seña del 50% | Cambios grandes se cotizan aparte</p>
+          <a href="https://wa.me/543515911147?text=Hola%20Mariana%2C%20me%20interesa%20el%20servicio%20de%20Flyers" target="_blank" class="boton" style="display: block; color: #25D366; margin: 15px 0; text-align: center; text-decoration: none;">Consultar por WhatsApp</a>
+          <button class="volver">Volver</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contenido-principal">
+          <div class="card-banner-container">
+            <img class="card-banner" src="img/actualizar.svg" alt="Actualización de landing" />
+          </div>
+          <h3>Actualización WEB</h3>
+          <p>Revisión y mejoras sobre tu sitio ya entregado.</p>
+          <button class="ver-detalle">Ver detalles</button>
+        </div>
+
+        <div class="detalle-servicio" style="display: none;">
+          <h4>Incluye:</h4>
+          <ul>
+            <li>Implementación de cambios solicitados</li>
+            <li>1 revisión final con ajustes sugeridos por el cliente.</li>
+          </ul>
+          <p><strong>¿Qué incluye?</strong> Textos, imágenes, colores, enlaces y ajustes visuales menores.</p>
+          <p><strong><u>Condiciones:</u></strong> Seña del 50% | Pago completo</p>
+          <a href="https://wa.me/543515911147?text=Hola%20Mariana%2C%20me%20interesa%20el%20servicio%20de%20Actualización%20Web" target="_blank" class="boton" style="display: block;color: #25D366; margin: 15px 0; text-align: center; text-decoration: none;">Consultar por WhatsApp</a>
+          <button class="volver">Volver</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="contenido-principal">
+          <div class="card-banner-container">
+            <img class="card-banner" src="img/actualiza1.png" alt="Logo" />
+          </div>
+          <h3>Diseño de logo</h3>
+          <p>Identidad visual profesional para tu marca.</p>
+          <button class="ver-detalle">Ver detalles</button>
+        </div>
+
+        <div class="detalle-servicio" style="display: none;">
+          <h4>Incluye:</h4>
+          <ul>
+            <li>2 propuestas iniciales</li>
+            <li>2 rondas de ajustes</li>
+            <li>Entrega: PNG fondo blanco y transparente</li>
+          </ul>
+          <p><strong><u>Condiciones:</u></strong> Seña del 50% | Cambios grandes se cotizan aparte</p>
+          <a href="https://wa.me/543515911147?text=Hola%20Mariana%2C%20me%20interesa%20el%20servicio%20de%20Diseño%20de%20Logo" target="_blank" class="boton" style="display: block;color: #25D366; margin: 15px 0; text-align: center; text-decoration: none;">Consultar por WhatsApp</a>
+          <button class="volver">Volver</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="portafolio-trabajos" style="margin-top: 60px; padding: 0 20px;">
+  <h2 style="text-align: center; margin-bottom: 30px; color: #FFD700;">Mis Trabajos</h2>
+  
+  <div style="display: flex; justify-content: center; gap:30px; flex-wrap: wrap;">
+    
+    <div class="card" style="max-width: 350px; width: 100%; display: block !important;"> 
+      <div class="contenido-propio-trabajo">
+        <div class="card-banner-container">
+          <img class="card-banner" src="img/crazynight-porfolio.png" alt="Web Crazy Night" style="width: 100%; height: auto; object-fit: cover;" />
+        </div>
+        <h3>Crazy Night</h3>
+        <p style="color: #fff; margin: 5px 0;">Sitio Web para Artistas</p>
+        <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 15px;">Desarrollo completo realizado 100% de forma independiente como parte del equipo NodoStack.</p>
+        
+        <button onclick="document.getElementById('miModalWeb').style.display='block'; document.getElementById('iframeWeb').src='https://crazynight.netlify.app/';" style="width: 100%; padding: 12px; background-color: #FFD700; color: #000; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">
+  Ver Sitio Web aquí 
+</button>
+      </div>
+    </div>
+
+    <div class="card" style="max-width: 350px; width: 100%; display: block !important;"> 
+      <div class="contenido-propio-trabajo">
+        <div class="card-banner-container">
+          <img class="card-banner" src="img/sole.png" alt="Invitación web" style="width: 100%; height: auto; object-fit: cover;" />
+        </div>
+        <h3>Soledad - Invitación Web</h3>
+        <p style="color: #fff; margin: 5px 0;">Invitación digital interactiva</p>
+        <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 15px;">Desarrollo completo realizado 100% de forma independiente por Mc-Servicios digitales.</p>
+        
+        <button onclick="document.getElementById('miModalWeb').style.display='block'; document.getElementById('iframeWeb').src='https://cumple-soledad.netlify.app/';" style="width: 100%; padding: 12px; background-color: #FFD700; color: #000; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">
+  Ver Sitio Web aquí 
+</button>
+      </div>
+    </div>
+
+    <!-- Card Nails by Briseida -->
+    <div class="card" style="max-width: 350px; width: 100%; display: block !important;"> 
+      <div class="contenido-propio-trabajo">
+        <div class="card-banner-container">
+          <img class="card-banner" src="img/brise.png" alt="Nails by Briseida" style="width: 100%; height: auto; object-fit: cover;" />
+        </div>
+        <h3>Nails by Briseida</h3>
+        <p style="color: #fff; margin: 5px 0;">Sistema de Cotización Interno</p>
+        <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 15px;">Desarrollo completo realizado 100% de forma independiente por Mc-Servicios digitales.</p>
+        
+        <button onclick="document.getElementById('modalFotoUñas').style.display='block';" style="width: 100%; padding: 12px; background-color: #FFD700; color: #000; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">
+          Ver Vista Previa 
+        </button>
+      </div>
+    </div>
+    <!-- Card Gestor de Documentos -->
+    <div class="card" style="max-width: 350px; width: 100%; display: block !important;"> 
+      <div class="contenido-propio-trabajo">
+        <div class="card-banner-container">
+          <!-- Asegúrate de colocar la captura del gestor en tu carpeta img -->
+          <img class="card-banner" src="img/gestor.png" alt="Gestor de Documentos" style="width: 100%; height: auto; object-fit: cover;" />
+        </div>
+        <h3>Gestor de Documentos</h3>
+        <p style="color: #fff; margin: 5px 0;">Plataforma con IA (Gemini)</p>
+        <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 15px;">Desarrollo completo realizado 100% de forma independiente como parte del equipo NodoStack.</p>
+        
+        <button onclick="document.getElementById('modalGestorDoc').style.display='block';" style="width: 100%; padding: 12px; background-color: #FFD700; color: #000; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 14px;">
+          Ver Vista Previa 
+        </button>
+      </div>
+    </div>
+
+    </div>
+</div>
+
+<div id="miModalWeb" style="display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); backdrop-filter: blur(5px);">
+  
+  <div style="position: relative; background-color: #111; margin: 2% auto; padding: 15px; border: 1px solid #FFD700; border-radius: 8px; width: 90%; max-width: 1100px; height: 88vh; display: flex; flex-direction: column;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <span style="color: #FFD700; font-weight: bold; font-size: 16px;">Vista previa</span>
+      <button onclick="document.getElementById('miModalWeb').style.display='none'; document.getElementById('iframeWeb').src='';" style="background-color: #FFD700; color: #000; border: none; border-radius: 4px; padding: 6px 14px; cursor: pointer; font-weight: bold; font-size: 14px;">
+  Cerrar [X]
+</button>
+    </div>
+
+    <iframe id="iframeWeb" src="" style="width: 100%; height: 100%; border: none; border-radius: 4px; background: #fff;" title="Vista previa de Crazy Night"></iframe>
+  </div>
+</div>
+
+    <div class="cta-servicios" style="margin-top: 50px;">
+      <h3>¿Querés llevar tu proyecto o evento al siguiente nivel?</h3>
+      <p>Ya sea un negocio, un proyecto artístico o una celebración especial, te ayudo a crear una presencia web única y a medida.</p>
+      <a href="https://wa.me/543515911147?text=Hola%20Mariana%2C%20quiero%20saber%20más%20sobre%20los%20servicios%20digitales%20que%20ofreces" class="boton grande" style="text-decoration: none;">
+      Hablemos por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>MC Servicios Digitales – Córdoba, Argentina</p>
+    <p>Sígueme en <a href="https://instagram.com/mc.serviciosdigitales">@mc.serviciosdigitales</a></p>
+    <p>© 2025 – Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+ <!---------------------------------------------------------------------- -->
+  <!-- Modal PRIVADO exclusivo para mostrar captura de pantalla de la app -->
+   <!---------------------------------------------------------------------- -->
+<div id="modalFotoUñas" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); overflow: auto;">
+  <div style="background-color: #1a1a1a; border: 1px solid #FFD700; margin: 5% auto; padding: 20px; width: 90%; max-width: 700px; border-radius: 8px; position: relative; color: #fff;">
+    
+    <!-- Botón para cerrar modal -->
+    <span onclick="document.getElementById('modalFotoUñas').style.display='none';" style="position: absolute; right: 15px; top: 10px; color: #FFD700; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+    
+    <span style="background-color: #FFD700; color: #000; padding: 4px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase;">🔒 Herramienta Privada de Uso Interno</span>
+    <h3 style="margin-top: 10px; color: #fff;">Nails by Briseida · Cotizador y Comprobantes</h3>
+    
+    <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 15px;">
+      Plataforma web desarrollada a medida para la gestión interna de servicios, cálculo automatizado de tarifas y emisión de comprobantes digitales.
+    </p>
+
+    <!-- Captura de la app -->
+    <div style="text-align: center; border: 1px solid #333; border-radius: 6px; overflow: hidden; background: #000;">
+      <img src="img/brise.png" alt="Captura de la web de uñas" style="width: 100%; height: auto; display: block;" />
+    </div>
+  </div>
+</div>
+
+<!---------------------------------------------------------------------- -->
+<!-- Modal exclusivo para mostrar captura de Gestor de Documentos -->
+ <!---------------------------------------------------------------------- -->
+<div id="modalGestorDoc" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); overflow: auto;">
+  <div style="background-color: #1a1a1a; border: 1px solid #FFD700; margin: 5% auto; padding: 20px; width: 90%; max-width: 700px; border-radius: 8px; position: relative; color: #fff;">
+    
+    <!-- Botón para cerrar modal -->
+    <span onclick="document.getElementById('modalGestorDoc').style.display='none';" style="position: absolute; right: 15px; top: 10px; color: #FFD700; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+    
+    <span style="background-color: #FFD700; color: #000; padding: 4px 10px; font-size: 0.75rem; font-weight: bold; border-radius: 4px; text-transform: uppercase;">🔒 Sistema Privado / Uso Interno</span>
+    <h3 style="margin-top: 10px; color: #fff;">Gestor Inteligente de Documentos</h3>
+    
+    <p style="font-size: 0.9rem; color: #ccc; margin-bottom: 15px;">
+      Aplicación web de gestión documental integrada con Inteligencia Artificial (Google Gemini) para el procesamiento, análisis y búsqueda avanzada en archivos privados.
+    </p>
+
+    <!-- Captura de la app -->
+    <div style="text-align: center; border: 1px solid #333; border-radius: 6px; overflow: hidden; background: #000;">
+      <img src="img/gestor.png" alt="Captura del Gestor de Documentos con Gemini IA" style="width: 100%; height: auto; display: block;" />
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

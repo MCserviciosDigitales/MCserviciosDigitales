@@ -1,0 +1,29 @@
+// 🕒 FECHA LÍMITE DE LA PROMO
+const fechaLimitePromo = new Date("2025-08-07"); // vencida
+const hoy = new Date(); // o forzá con new Date("2025-08-08")
+
+// 💰 Precios
+const precioNormal = "$20.000";
+const precioConDescuento = "$15.000";
+
+// 🔁 Actualizar precio promocional
+document.querySelectorAll(".precio-promocional").forEach(el => {
+  el.textContent = hoy > fechaLimitePromo ? precioNormal : precioConDescuento;
+});
+
+// ✅ Mostrar el precio original tachado solo cuando hay promo
+document.querySelectorAll(".precio-original").forEach(el => {
+  el.style.textDecoration = hoy > fechaLimitePromo ? "none" : "line-through";
+});
+
+// 🔁 Ocultar texto de promo si venció
+document.querySelectorAll("strong").forEach(el => {
+  if (el.textContent.includes("Promo relanzamiento")) {
+    el.style.display = hoy > fechaLimitePromo ? "none" : "inline";
+  }
+});
+
+// 🔁 Ocultar fecha de validez si venció
+document.querySelectorAll(".promo-fecha").forEach(el => {
+  el.style.display = hoy > fechaLimitePromo ? "none" : "inline";
+});
