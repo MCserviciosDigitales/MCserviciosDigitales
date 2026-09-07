@@ -17,35 +17,68 @@ h1, h2, h3 {
 }
 
 .titulo-hero {
-  font-size: 4rem; /* Tamaño grande para PC */
+  font-size: 4rem;
   text-align: center;
-  color: #ffffff; /* Cambiá el color si lo necesitás */
+  color: #ffffff;
   margin-top: 20px;
 }
 
-/* Estilo responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
   .titulo-hero {
-    font-size: 2rem; /* Más chico pero aún visible en celular */
+    font-size: 2rem;
   }
 }
 
-/* SWITCH */
+/* SWITCH Y CARTELITO FLOTANTE */
 #switch-mode {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem 0;
-  gap: 1rem;
-  font-size: 1rem;
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin: 4rem 0 2rem 0;
 }
 
-/* INTERRUPTOR MÁS ANCHO Y ALTO */
+#cartelito-switch {
+  position: absolute; 
+  top: -50px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #FFD700; 
+  color: #000; 
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  font-weight: bold; 
+  font-size: 0.85rem; 
+  white-space: nowrap;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  animation: palpitar 1.5s infinite alternate;
+  z-index: 10;
+}
+
+.flecha-cartelito {
+  position: absolute; 
+  bottom: -6px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  border-width: 6px 6px 0; 
+  border-style: solid; 
+  border-color: #FFD700 transparent; 
+  display: block; 
+  width: 0;
+}
+
+.switch-contenedor-interno {
+  display: flex; 
+  align-items: center; 
+  gap: 12px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
-  width: 90px;   /* más ancho */
-  height: 44px;  /* más alto */
+  width: 90px;
+  height: 44px;
 }
 
 .switch input {
@@ -54,12 +87,11 @@ h1, h2, h3 {
   height: 0;
 }
 
-/* FONDO BEIGE CON BRILLO */
 .slider {
   position: absolute;
   cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(145deg, #d8b98c, #bfa16e); /* beige con brillo */
+  background: linear-gradient(145deg, #d8b98c, #bfa16e);
   box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
   transition: 0.4s;
   border-radius: 34px;
@@ -68,7 +100,7 @@ h1, h2, h3 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 34px;       /* más grande */
+  height: 34px;
   width: 34px;
   left: 5px;
   bottom: 5px;
@@ -78,14 +110,13 @@ h1, h2, h3 {
   border-radius: 50%;
 }
 
-/* CAMBIO DE COLOR AL ACTIVARSE */
 input:checked + .slider {
-  background: linear-gradient(145deg, #d2b48c, #c9a46b); /* beige miel clara con brillo */
+  background: linear-gradient(145deg, #d2b48c, #c9a46b);
   box-shadow: 0 0 10px #d2b48c;
 }
 
 input:checked + .slider:before {
-  transform: translateX(46px);  /* acorde al nuevo ancho */
+  transform: translateX(46px);
 }
 
 .slider.round {
@@ -97,11 +128,10 @@ input:checked + .slider:before {
 }
 
 #modoTexto {
-  color: #f5deb3; /* tono beige claro */
+  color: #f5deb3;
   font-weight: 600;
+  cursor: pointer;
 }
-
-
 
 #sobre-mi {
   background-color: #1a1a1a;
@@ -139,31 +169,6 @@ input:checked + .slider:before {
   color: #ddd;
 }
 
-.iconos-sobremi {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1.2rem;
-  flex: 1 1 300px;
-  min-width: 260px;
-}
-
-.icono-item {
-  text-align: center;
-}
-
-.icono-item img {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 0.5rem;
-  filter: brightness(1.2);
-}
-
-.icono-item span {
-  display: block;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #f5deb3;
-}
 .iconos-sobremi-vertical {
   display: flex;
   flex-direction: column;
@@ -189,8 +194,7 @@ input:checked + .slider:before {
   font-size: 1rem;
 }
 
-
-/* CONTENEDOR DE LAS CARDS */
+/* CARDS SERVICIOS */
 .cards-servicios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -199,31 +203,24 @@ input:checked + .slider:before {
   margin-top: 2rem;
 }
 
-/* ESTILO BASE DE LAS CARDS */
 .card {
-  background: linear-gradient(135deg, #1c1c1c, #2a2a2a); /* fondo más oscuro */
-  border: 1px solid rgba(255, 245, 220, 0.2); /* borde beige claro sutil */
+  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+  border: 1px solid rgba(255, 245, 220, 0.2);
   border-radius: 20px;
-   padding: 0 1.5rem 2rem 1.5rem; /* sin padding arriba */
+  padding: 0 1.5rem 2rem 1.5rem;
   text-align: center;
   color: #f5f5dc;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 1px rgba(255, 245, 220, 0.1); /* borde luminoso */
+  box-shadow: 0 0 0 1px rgba(255, 245, 220, 0.1);
 }
 
-/* EFECTO HOVER */
 .card:hover {
   transform: translateY(-10px) scale(1.03);
   background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
-  box-shadow: 0 0 20px rgba(230, 207, 167, 0.5); /* brillo dorado suave */
-  border: 1px solid rgba(255, 215, 0, 0.5);     /* borde dorado más visible */
+  box-shadow: 0 0 20px rgba(230, 207, 167, 0.5);
+  border: 1px solid rgba(255, 215, 0, 0.5);
 }
 
-
-
-
-/* IMAGEN DENTRO DE LA CARD */
-/* SOLO PARA ICONOS PEQUEÑOS */
 .card img:not(.card-banner) {
   width: 64px;
   height: 64px;
@@ -231,8 +228,6 @@ input:checked + .slider:before {
   filter: brightness(1.2);
 }
 
-
-/* TITULOS Y TEXTOS */
 .card h3 {
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
@@ -252,7 +247,7 @@ input:checked + .slider:before {
 }
 
 .card-banner-container {
-  width: calc(100% + 3rem); /* Expande el ancho para cubrir padding izquierdo y derecho */
+  width: calc(100% + 3rem);
   margin-left: -1.5rem;
   margin-right: -1.5rem;
   height: 160px;
@@ -262,30 +257,24 @@ input:checked + .slider:before {
   margin-bottom: 1.5rem;
 }
 
-
 .card-banner {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Esto hace que se vea como banner completo sin deformarse */
+  object-fit: cover;
   display: block;
 }
 
-
-
 #servicios {
-  background-color: #111; /* o el mismo que tengas de fondo general */
-  padding: 0 rem 2rem 3rem 2rem; /* top right bottom left */
-
- /*  border-top: 2px solid #f5f5dc;     línea beige arriba */
-  border-bottom: 2px solid #f5f5dc;  /* línea beige abajo */
+  background-color: #111;
+  padding: 0 0 2rem 0;
+  border-bottom: none; /* Quitamos el borde inferior que generaba la raya extraña */
 }
 
-/*esto es para mensaje persuasivo*/
+/* CTA WHATSAPP */
 .cta-servicios {
   text-align: center;
   margin-top: 0.5rem;
-  padding: 2rem 1rem;
-  padding-bottom: 4rem;
+  padding: 2rem 1rem 3rem 1rem;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -307,7 +296,7 @@ input:checked + .slider:before {
 .cta-servicios .boton.grande {
   padding: 0.8rem 1.8rem;
   font-size: 1.1rem;
-  background-color: #25D366; /* VERDE WHATSAPP */
+  background-color: #25D366;
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -321,105 +310,57 @@ input:checked + .slider:before {
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
-/*footer*/
-footer {
-  background-color: #1a1a1a; /* fondo oscuro elegante */
-  color: #eee;
-  padding: 2rem 1rem;
+/* FOOTER ELEGANTE ESTILO BEIGE (Sin rayas cruzadas) */
+/* FOOTER DEGRADADO METÁLICO / BEIGE BRILLANTE */
+.footer-beige {
+  /* Fondo base color arena cálido */
+  background-color: #d8c4a9;
+  
+  /* Capas múltiples de textura orgánica moteada (efecto piedra/arena irregular) */
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(138, 110, 77, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255, 243, 220, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(110, 85, 55, 0.15) 0%, transparent 60%),
+    radial-gradient(rgba(100, 75, 45, 0.1) 1px, transparent 0);
+  
+  background-size: 180px 180px, 220px 220px, 300px 300px, 6px 6px;
+  
+  /* Animación fluida para que la textura "respire" y se mueva suavemente */
+  animation: texturaArenaMovimiento 5s ease-in-out infinite alternate;
+  
+  color: #3d3124; /* Un marrón oscuro elegante para que el texto resalte perfecto */
+  padding: 45px 20px;
   text-align: center;
-  font-size: 0.95rem;
-  border-top: 2px solid #d2b48c; /* línea superior beige suave */
-}
-
-footer p {
-  margin: 0.5rem 0;
-}
-
-footer a {
-  color: #f5deb3; /* beige claro */
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #fff8dc; /* un tono más claro al pasar el mouse */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-}
-
-/*GIRO DE CARD*/
-.card-flip {
-  perspective: 1000px;
-}
-
-.card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+  overflow: hidden;
+  border-top: 2px solid rgba(110, 85, 55, 0.2);
 }
 
-.card-flip:hover .card-inner,
-.card-flip:focus-within .card-inner {
-  transform: rotateY(180deg);
+/* Animación lenta y orgánica de desplazamiento de la textura */
+@keyframes texturaArenaMovimiento {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0 0;
+  }
+  100% {
+    background-position: 40px 30px, -50px -40px, 30px -50px, 10px 10px;
+  }
 }
 
-/* Frente y dorso */
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 2rem 1.5rem;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
-  border: 1px solid rgba(255, 245, 220, 0.2);
-  box-shadow: 0 0 0 1px rgba(255, 245, 220, 0.1);
-  color: #f5f5dc;
-  text-align: center;
-}
-
-/* Reverso */
-.card-back {
-  transform: rotateY(180deg);
-  background: linear-gradient(135deg, #2e2e2e, #3a3a3a);
-}
-
-.card-back h3 {
-  margin-bottom: 1rem;
-  color: #ffd700;
-}
-
-.card-back ul {
-  list-style: none;
-  padding: 0;
-}
-
-.card-back ul li {
-  margin-bottom: 0.5rem;
-}
-
-.precio-promocional {
-  font-size: 3rem !important;
-  color: #FFD700; /* Amarillo brillante */
+.footer-beige a {
+  color: #6b4f24;
+  text-decoration: underline;
   font-weight: bold;
-  margin-top: 10px;
-  display: block;
 }
 
-.promo-fecha {
-  color: #FFD700 !important;
-  font-weight: bold;
-  margin-top: 4px;
-  display: block;
+.footer-beige a:hover {
+  color: #3d3124;
 }
 
-/* tamaño y color textos del reverso del card */
+/* TEXTOS Y DETALLES DE CARDS */
 .detalle-servicio p,
 .detalle-servicio ul {
   font-size: 0.8rem;
-  color: #fcfafa; /* o el color que estés usando */
+  color: #fcfafa;
   line-height: 1.4;
   text-align: left;
 }
@@ -448,141 +389,36 @@ footer a:hover {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-/* 🔁 Contenedor general: precio + botón */
-.precio-boton {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.5rem;
-}
 
-/* 🔁 Contenedor interno del precio */
-.precio-container {
-  margin-top: 1rem;
-}
-
-.precio-linea {
-  display: flex;
-  gap: 0.5rem;
-  align-items: baseline;
-}
-
-.precio-original {
-  text-decoration: line-through;
-  color: #bbb;
-  font-size: 1.1rem;
-}
-
-.precio-promocional {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #e91e63;
-}
-
-.promo-fecha-logo {
-  font-size: 0.9rem;
-  color: #FFD700 !important;
-  margin-top: 0.3rem;
-  display: block;
-}
-
-.precio-final-destacado {
-  display: block;
-  text-align: center;
-  font-size:  3em !important;    /* Más grande */
-  font-weight: bold;      /* Más grueso */
-  margin: 20px 0;         /* Espaciado arriba y abajo */
-  color: #FFD700!important;           /* Color neutro, podés cambiarlo */
-}
-.precio-final {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.precio-promocional-logo{
-  font-size: 3em !important;
-   font-weight: bold; 
-   margin: 4px 0;
-   text-align: center !important;        /* Centrado horizontal */
-  display: block;            /* Asegura que el texto ocupe toda la línea */
-  
-}
-
-/* === CORRECCIONES PARA UNIFICAR ESTILO DE CARDS === */
-
-/* Precio inicial en cara principal */
-.precio-inicial {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #FFD700;
-  display: block;
-  margin: 1rem 0;
-}
-
-/* Precio promocional grande y amarillo */
-.precio-promocional {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #FFD700 !important;
-  display: block;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-/* Precio original tachado */
-.precio-original {
-  text-decoration: line-through;
-  color: #bbb;
-  font-size: 1.1rem;
-  margin-right: 0.5rem;
-}
-
-/* Precio final si no hay promo */
-.precio-final {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.precio-final-destacado {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #FFD700;
-  display: block;
-  margin: 1rem 0;
-}
-
-/* Fecha de promo */
-.promo-fecha {
-  color: #FFD700;
-  font-weight: bold;
-  font-size: 0.9rem;
-  display: block;
-  text-align: center;
-  margin-top: 0.3rem;
-}
-
-/* Línea de promo y packs */
-.promo-linea,
-.pack-linea,
-.promo-linea-ajuste {
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 0.9rem;
-  color: #f5deb3;
-}
-
-.pregunta-destacada {
-  color: #FFD700 !important; /* amarillo brillante */
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-/* ANIMACION DE PALPITACION*/
+/* ANIMACION DE PALPITACION DEL CARTELITO */
 @keyframes palpitar {
   0% {
     transform: translateX(-50%) translateY(0);
   }
   100% {
-    transform: translateX(-50%) translateY(-6px); /* Sube un poquito */
+    transform: translateX(-50%) translateY(-6px);
   }
+}
+/*===================
+botones principales
+====================*/
+/* Botones principales de trabajos y llamadas a la acción */
+.card button,
+.contenido-propio-trabajo button,
+#servicios button.ver-detalle {
+  background: linear-gradient(135deg, #d4b58e, #bfa16e) !important; /* Degradado beige/dorado elegante */
+  color: #111111 !important; /* Texto oscuro de alto contraste pero suave */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover elegante cuando pasas el mouse por encima */
+.card button:hover,
+.contenido-propio-trabajo button:hover,
+#servicios button.ver-detalle:hover {
+  background: linear-gradient(135deg, #e5c596, #d4b58e) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 181, 142, 0.4);
 }
