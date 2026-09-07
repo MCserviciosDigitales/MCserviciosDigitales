@@ -56,7 +56,6 @@ window.addEventListener("click", (e) => {
     window.cerrarMiModal();
   }
 });
-
 /* ==========================================================
    1. CONTROL DEL SWITCH (SOBRE MÍ / SERVICIOS) Y CARTELITO
    ========================================================== */
@@ -67,10 +66,16 @@ const textoModo = document.getElementById("modoTexto");
 const cartelito = document.getElementById("cartelito-switch");
 
 // Configuración inicial al cargar la página:
-// Mostramos "Sobre mí" y ocultamos "Servicios"
+// Mostramos "Servicios" primero y ocultamos "Sobre mí"
 if (sobreMi && servicios) {
-  sobreMi.style.display = "block";
-  servicios.style.display = "none";
+  servicios.style.display = "block";
+  sobreMi.style.display = "none";
+}
+
+// Si quieres que el switch arranque apagado (a la izquierda), nos aseguramos:
+if (toggle) {
+  toggle.checked = false;
+  if (textoModo) textoModo.textContent = "💁 Sobre mí";
 }
 
 // Lógica para el botón switch
@@ -81,16 +86,16 @@ if (toggle) {
       cartelito.style.display = "none";
     }
 
-    // 2. Si el switch está ACTIVADO (derecha) -> Mostramos Servicios y ocultamos Sobre mí
+    // 2. Si el switch está ACTIVADO (derecha) -> Mostramos "Sobre mí" y ocultamos "Servicios"
     if (toggle.checked) {
-      sobreMi.style.display = "none";
-      servicios.style.display = "block";
-      if (textoModo) textoModo.textContent = "🛠 Servicios";
-    } 
-    // 3. Si el switch está DESACTIVADO (izquierda) -> Mostramos Sobre mí y ocultamos Servicios
-    else {
-      sobreMi.style.display = "block";
       servicios.style.display = "none";
+      sobreMi.style.display = "block";
+      if (textoModo) textoModo.textContent = "🛠 Servicios"; // O el texto que prefieras para volver
+    } 
+    // 3. Si el switch está DESACTIVADO (izquierda) -> Mostramos "Servicios" y ocultamos "Sobre mí"
+    else {
+      servicios.style.display = "block";
+      sobreMi.style.display = "none";
       if (textoModo) textoModo.textContent = "💁 Sobre mí";
     }
   });
